@@ -1,0 +1,28 @@
+.question-112{
+    text-shadow:rgb(192, 191, 191) 2px 2px ;
+    font-size: 30px;
+    text-align: center;
+    border: 0px;
+    border-style: groove;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 15px 10px rgba(0, 0, 0, 0.19);
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+.ccccc{
+
+}
+.cardcccc{
+    border:2px solid black;
+    margin-top:50px;
+    margin-left:25px;
+    margin-right: 25px;
+    margin-bottom:50px;
+    height: 750px;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.2); 
+    
+     box-shadow: 5px 10px #888888;
+    border-radius: 20px;
+}

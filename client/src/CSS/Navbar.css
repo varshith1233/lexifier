@@ -1,0 +1,29 @@
+.navbar-nav .nav-link:hover {
+    color: grey;
+  }
+  .navbar {
+    background-color: #000;
+    height:80px;
+  }
+  
+  .navbar a {
+    color: #fff;
+  }
+  
+  .navbar a:hover {
+    color: #ccc;
+  }
+  
+  .navbar .nav-item {
+    margin-right: 10px;
+  }
+  
+  .navbar .nav-link .but {
+    color: #777;
+    background-color: #fff;
+  }
+  
+  .navbar .nav-link .but:hover {
+    color: #ccc;
+  }
+  

@@ -1,0 +1,21 @@
+.image-gallery {
+    display: flex;
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-name {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  

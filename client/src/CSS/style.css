@@ -1,0 +1,29 @@
+.card-card-123{
+  margin-top:20px;
+  min-height: 200px;
+  box-shadow: 20px 20px 30px 10px rgb(50 50 50 / 16%);
+  min-width: 270px;
+  width:320px;
+  height:200px;
+
+
+}
+.flex-123{
+  display:flex;
+  flex-wrap: wrap;
+}
+.question-q{
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  padding:10px;
+}
+.questiondesc-q{
+text-align: center;
+padding-bottom: 30px;
+display: inline-block;
+width: 180px;
+white-space: nowrap;
+overflow: hidden !important;
+text-overflow: ellipsis; display: inline-block
+}

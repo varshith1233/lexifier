@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+    background-color:white;
+    margin-top:10%;
+    margin-left:-4%;
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height:60%;
+    margin-left:4%;
+    margin-top: 5%;
+  }
+  
+  .heading {
+    font-weight: bold;
+  }
+  
+  .info {
+    margin-top: 20px;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  
