@@ -27,7 +27,7 @@ function App() {
         <Route path="/Questions" element={<Questions/>}></Route>
         <Route path="/QuestionsAdmin" element={<QuestionsAdmin/>}></Route>
         <Route path="/Addquestions" element={<Addquestions/>}></Route>
-        <Route path="/result" element={<Result/>}></Route>
+        <Route path="/result" element={<Result   />}></Route>
         <Route path="/practice" element={<Practice/>}></Route>
         <Route path="/" element={<MainHome/>}></Route>
         <Route path="/demo" element={<Demo/>}></Route>

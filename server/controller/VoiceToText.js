@@ -3,58 +3,39 @@ const path = require('path');
 const {spawn} = require('child_process');
 
 module.exports.addincorrectdata = async (req,res)=>{
-    
     const  incorrectText  = req.body.transcript;
     console.log(incorrectText);
-
- 
   const pythonFilePath = path.join(__dirname, 'grammar-correction.py');
   const pythonProcess = spawn('python', [pythonFilePath, incorrectText]);
-
   let correctedText = '';
-
   pythonProcess.stdout.on('data', (data) => {
     const output = data.toString();
-
     if (output.includes('CORRECTED_TEXT:')) {
       correctedText = output.replace('CORRECTED_TEXT:', '').trim();
       console.log(correctedText); 
-
       const incorrectWords = incorrectText.split(" ");
       const correctedWords = correctedText.split(" ");
-
       let correctCorrections = 0;
-
       for (let i = 0; i < incorrectWords.length; i++) {
         if (incorrectWords[i] === correctedWords[i]) {
           correctCorrections++;
-        }
-      }
+        }}
       const accuracy = (correctCorrections / incorrectWords.length) * 100;
     console.log(accuracy);
-
       const entry = new voiceToText({incorrectText:incorrectText,correctedText:correctedText,accuracy:accuracy});
       const success = entry.save()
-      
       if (success){
         return res.send({code:200,message:"successfuly converted incorrect to correct",correctedText:correctedText,incorrectText:incorrectText,accuracy:accuracy})
         }
     else{
         return res.send({code:500,message:'error'})
     }}
-}
-  );
-
-  
-
+});
   pythonProcess.stderr.on('data', (data) => {
     console.error(`Error: ${data.toString()}`);
-
   });
-
   pythonProcess.on('close', (code) => {
     if (code === 0) {
-      // Do any additional processing or database operations with the correctedText here
     } else {
       console.error('An error occurred during grammar correction.');
     }

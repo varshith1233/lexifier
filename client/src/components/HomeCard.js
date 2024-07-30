@@ -17,17 +17,6 @@ function HomeCard() {
   },[])
   return (
     <div>
-        {/* <div class="card" style={{width:"700px"}}>
-            <div class="card-body">
-              <div style={{textAlign:'center'}}>
-                <h5 class="card-title">Question</h5>
-              </div>
-                <p class="card-text">An interview is a structured conversation where one participant asks questions, and the other provides answers.The interviewer asks questions to which the interviewee responds, usually providing information. </p>
-                <div className="d-grid gap-2 col-3 mx-auto">
-                <a href="#" class="btn btn-primary "><Link  to="/home" className="custom-link">Practice</Link></a>
-                </div>
-            </div>
-            </div> */}
           <div className='flex-123'>
             {
               data.length>0?
